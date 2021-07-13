@@ -42,7 +42,7 @@ class DashBoardPresenter(val context: Context, val mvpView: DashBoardMvpView) {
         tempList.clear()
         if(string!=null && string!=""){
             for (item in listOfAllFlag){
-                if(item!!.name!!.contains(string,false)){
+                if(item!!.name!!.contains(string,true)){
                     tempList.add(item)
                 }
             }
